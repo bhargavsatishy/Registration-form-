@@ -1,0 +1,54 @@
+
+
+
+<h3>post the Users</h3>
+<div>
+  <div class="conatiner">
+    <div class="row">
+      <div class="col-md-10">
+
+        <table>
+          <tr class="form-group">
+            <td> Student ID:</td>
+            <td>
+              <input class="form-control" type="text" #ID="ngModel" name="ID" [(ngModel)]="Users.ID">
+            </td>
+          </tr>
+          Student Name:<input type="text" #Name="ngModel" name="Name" [(ngModel)]="Users.Name">
+          <br>
+           Email:
+          <input type="text" #Email="ngModel" name="Email" [(ngModel)]="Users.Email">
+          <br>
+           Class:
+          <input type="text" #Class="ngModel" name="Class" [(ngModel)]="Users.Class"><br>
+          Enrollment Year:
+          <input type="text" #Year="ngModel" name="Year" [(ngModel)]="Users.Year"><br>
+           City:
+          <input type="text" #City="ngModel" name="City" [(ngModel)]="Users.City"> <br>
+          Country:
+          <input type="text" #Country="ngModel" name="Country" [(ngModel)]="Users.Country">
+          <br>
+
+          <button (click)="submit()">submit</button>
+          <!-- <button (click)="getByid()">get</button> -->
+          <!-- <button (click)="put()">put</button> -->
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- <form>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" #emailid placeholder="email">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1" #pass placeholder="Password">
+  </div>
+
+  <button type="submit" class="btn btn-primary" (click)="login(emailid,pass)">Login</button>
+</form> -->

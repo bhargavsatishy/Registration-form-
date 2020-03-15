@@ -1,0 +1,19 @@
+<form>
+
+  <h3>post the Users</h3>
+  <div>
+    Student ID:
+    <input type="number" #ID="ngModel" name="ID" [(ngModel)]="Users.ID"> Student Name:
+    <input type="text" #Name="ngModel" name="Name" [(ngModel)]="Users.Name">
+    <br> Email:
+    <input type="text" #Email="ngModel" name="Email" [(ngModel)]="Users.Email">
+    <br> Class
+    <input type="text" #Class="ngModel" name="Class" [(ngModel)]="Users.Class">Enrollment Year
+    <input type="text" #Year="ngModel" name="Year" [(ngModel)]="Users.Year"> City
+    <input type="text" #City="ngModel" name="City" [(ngModel)]="Users.City"> Country
+    <input type="text" #Country="ngModel" name="Country" [(ngModel)]="Users.Country">
+
+    <button (click)="edit()">submit</button>
+
+  </div>
+</form>

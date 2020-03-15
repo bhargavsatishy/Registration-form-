@@ -1,0 +1,47 @@
+<!-- <form>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Email address</label>
+    <input type="email" class="form-control" id="exampleInputPassword1" #emailid placeholder="email">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1" #pass placeholder="Password">
+  </div>
+
+  <button type="submit" class="btn btn-primary" (click)="login(emailid,pass)">Login</button>
+</form> -->
+
+
+<form>
+  <table class="table  table-striped">
+    <tr>
+      <td>ID</td>
+      <td>Name</td>
+      <td>Email</td>
+      <td>Class</td>
+      <td>Year</td>
+      <td>City</td>
+      <td>Country</td>
+
+    </tr>
+
+    <tr *ngFor="let getuser of getusers">
+      <td>{{getuser.ID}}</td>
+      <td>{{getuser.Name}}</td>
+      <td>{{getuser.Email}}</td>
+      <td>{{getuser.Class}}</td>
+      <td>{{getuser.Year}}</td>
+      <td>{{getuser.City}}</td>
+      <td>{{getuser.Country}}</td>
+      <td>
+        <button (click)="edit(getuser.id)">edit</button>
+      </td>
+      <td>
+        <button (click)="delete(getuser.id)">delete</button>
+      </td>
+    </tr>
+  </table>
+
+
+
+</form>
