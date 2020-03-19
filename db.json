@@ -8,15 +8,6 @@
       "dob": "2010-12-07",
       "Message": "hello bhargav",
       "Website": "www.login.com"
-    },
-    {
-      "Name": "sumant",
-      "Email": "sumant@gmail.com",
-      "id": 2,
-      "Mobile": 90323902323,
-      "dob": "2010-12-03",
-      "Message": "hey",
-      "Website": "www.website.com"
     }
   ]
 }
