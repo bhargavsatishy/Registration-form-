@@ -1,13 +1,13 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { PostusersComponent } from './postusers/postusers.component';
-import { EdituserComponent } from './edituser/edituser.component';
 import { LoginComponent } from './login/login.component';
+import { PostuserssComponent } from './postuserss/postuserss.component';
 
 const routes: Routes = [
   { path: '', component: PostusersComponent },
   { path: 'post', component: PostusersComponent },
-  { path: 'edit/:id', component: EdituserComponent },
+  { path: 'postuser/:id', component: PostuserssComponent },
   { path: 'login', component: LoginComponent }
 ];
 

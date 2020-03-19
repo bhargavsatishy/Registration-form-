@@ -7,14 +7,14 @@ import { PostusersComponent } from './postusers/postusers.component';
 import { CrudserviceService } from './services/crudservice.service';
 import { HttpClientModule } from '@angular/common/http';
 import {FormsModule} from '@angular/forms';
-import { EdituserComponent } from './edituser/edituser.component';
-import { LoginComponent } from './login/login.component'
+import { LoginComponent } from './login/login.component';
+import { PostuserssComponent } from './postuserss/postuserss.component'
 @NgModule({
   declarations: [
     AppComponent,
     PostusersComponent,
-    EdituserComponent,
-    LoginComponent
+    LoginComponent,
+    PostuserssComponent
   ],
   imports: [
     BrowserModule,

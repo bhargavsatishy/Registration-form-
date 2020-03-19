@@ -16,39 +16,12 @@ export class PostusersComponent implements OnInit {
     this.Users = new Users();
   }
 
-  ngOnInit() {
+  ngOnInit() { }
 
-    this.service.getByid().subscribe((data) => {
-      alert(JSON.stringify(data))
-      this.getusers = data
-    })
-
-  }
   submit() {
-    alert(JSON.stringify(this.Users))
-    // alert(id1.value + id2.value + id3.value)
     this.service.submit(this.Users).subscribe((data) => {
-      console.log(data)
-      // alert(JSON.stringify(data))
-      this.router.navigate(["login"])
-
+      this.router.navigate(["/postuser/", data.id])
     })
 
   }
-
-
-  delete(id: any) {
-    this.service.delete(id).subscribe((data) => {
-      alert(JSON.stringify(data))
-    })
-  }
-
-  edit(id: any) {
-    this.router.navigate(['edit/' + id])
-
-  }
-
-
- 
-
 }

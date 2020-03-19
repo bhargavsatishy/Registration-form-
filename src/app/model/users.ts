@@ -1,9 +1,9 @@
 export class Users {
-    // ID:number
+    // ID: number;
     Name: string;
     Email: string;
-    Class: string;
-    Year: string;
-    City: string;
-    Country: string;
+    Mobile: string;
+    dob: string;
+    Message: string;
+    Website: string;
 }
