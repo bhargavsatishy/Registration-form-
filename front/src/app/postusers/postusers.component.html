@@ -1,0 +1,58 @@
+
+
+<style>
+  .log{
+width: 39%;
+margin-left: 28%;}
+</style>
+
+<div class = "container">
+    <div class="wrapper">
+
+      
+  
+        <form #myFrm ="ngForm" name="Login_Form" class="form-signin" >
+            <h6 class="form-signin-heading">Welcome ! Please enter your details..</h6>
+            <hr class="colorgraph"><br>
+            <div>
+                  Name : 
+            <input type="text" #Name="ngModel" [(ngModel)]="reg.name" name="name"   autocomplete="off"  class="form-control" required/>
+            <span *ngIf="Name.errors && (Name.touched ||Name.dirty)">
+              <span [hidden]="!Name.errors.required">Name Required..</span>
+              <!-- <span [hidden]="!Name.errors.minlength">Min 3 Digits..</span> -->
+
+      </span>  
+            
+          </div>
+          <div>
+                  Username or Email: 
+                  <input type="text" #Id="ngModel" [(ngModel)]="reg.username" autocomplete="off" name="username"  class="form-control" required /> 
+                  <span *ngIf="Id.errors && (Id.touched || Id.dirty)">
+                    <span class="btn btn-lg btn-dark" data-toggle="popover" [hidden]="!Id.errors.required">Id Required</span>
+                    <!-- <span class="btn btn-lg btn-dark" data-toggle="popover" [hidden]="!Id.errors.pattern">improper email</span> -->
+            </span>
+          </div>
+          <div>
+                  password : 
+                  <input type="password" #password="ngModel" [(ngModel)]="reg.password"  autocomplete="off" name="password"  class="form-control" required minlength="6"/>
+                  <span *ngIf="password.errors && (password.touched || password.dirty)">
+                    <span class="btn btn-lg btn-dark" data-toggle="popover" [hidden]="!password.errors.required">Password Required..</span>
+                    <span class="btn btn-lg btn-dark" data-toggle="popover" [hidden]="!password.errors.minlength">Min 6 Digits..</span>
+            </span>
+          </div>
+        
+          
+
+         
+          <div style="margin-top:8px" >
+        
+          <div class="log" >
+             
+          <button class="btn btn-lg btn-primary btn-block" [disabled]="myFrm.invalid" (click)="btnAddAuthClick(myFrm)"  >Submit</button></div></div>
+
+          </form>
+     
+    </div> 
+  </div>
+
+

@@ -1,0 +1,61 @@
+<div class="container">
+  <div class="row">
+    <div class="offset-3 col-md-8">
+
+      <h2>My Profile</h2>
+
+
+      <table class="table">
+
+
+
+        <tr>
+          <td>Name</td>
+          <td>username</td>
+          <td>timer</td>
+          <td>description</td>
+
+        </tr>
+
+        <tr>
+          <td>{{profile.name}}</td>
+
+          <td>{{profile.username}}</td>
+          <td>{{profile.timer}}</td>
+          <td>{{profile.description}}</td>
+
+
+        </tr>
+      </table>
+
+     
+
+
+
+      <button (click)='startTimer()'>Start Timer</button>&nbsp; &nbsp;
+
+      <button (click)='pauseTimer()'>Stop</button>
+      <br>
+      &nbsp;
+      <br>
+      description <input type="text" [(ngModel)]="description">
+      <br>
+      <br>
+      <div class="row">
+        <div *ngFor="let val of timers">&nbsp;
+          {{val}}
+        </div>
+        &nbsp; &nbsp;
+        <br>
+        <div *ngFor="let desc of descriptions">&nbsp;
+          {{desc}}
+        </div>
+      </div>
+      <p>{{timeLeft}} Seconds Left....</p>
+
+
+
+
+    </div>
+  </div>
+</div>

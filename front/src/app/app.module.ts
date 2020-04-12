@@ -8,13 +8,13 @@ import { CrudserviceService } from './services/crudservice.service';
 import { HttpClientModule } from '@angular/common/http';
 import {FormsModule} from '@angular/forms';
 import { LoginComponent } from './login/login.component';
-import { PostuserssComponent } from './postuserss/postuserss.component'
+import { ProfileComponent } from './profile/profile.component';
 @NgModule({
   declarations: [
     AppComponent,
     PostusersComponent,
     LoginComponent,
-    PostuserssComponent
+    ProfileComponent,
   ],
   imports: [
     BrowserModule,

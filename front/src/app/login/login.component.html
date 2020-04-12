@@ -1,0 +1,36 @@
+<style>
+  .log{
+width: 39%;
+margin-left: 28%;}
+</style>
+
+<div class = "container">
+    <div class="wrapper">
+
+      
+  
+        <form #frn="ngForm" name="Login_Form" class="form-signin" >
+            <h6 class="form-signin-heading">Welcome Back! Please Sign In</h6>
+            <hr class="colorgraph"><br>
+            <div>
+            <label><font size="3">Username:</font></label>
+            <input type="text" class="form-control" #uid />
+          </div>
+          <div>
+            <label><font size="3">Password:</font></label>
+            <input type="password" class="form-control" #pwd />
+          </div>
+         
+        
+          <div class="log" >
+             
+          <button class="btn btn-lg btn-primary btn-block" (click)="btnLoginClick(uid, pwd)"  >Login</button></div>
+     
+            
+              
+      
+
+          </form>
+     
+    </div>
+  </div>
